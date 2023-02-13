@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* #5b7065, black */
+  body {
+    background-image: linear-gradient(to right, #e22865, #37adcd);
+    /* background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%); */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  
+  button {
+    height: fit-content;
+    cursor: pointer;
+    color: #080808;
+    background-color: #c9d1c8;
+  }
+  
+  .app {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .to-do-input input {
+    width: 300px;
+    font-family: inherit;
+    border: none;
+    border: top left radius 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .to-do-input button {
+    color:rgb(8, 8, 8);
+    font-family: inherit;
+    font-weight: bold;
+    background-color: rgb(16, 218, 23);
+    border: none;
+    padding: 10px;
+    margin-left: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .to-do-list i {
+    color: #c9d1c8;
+    cursor: pointer;
+  }
+  
+  .to-do-list .fa-pen-to-square {
+    color: #3208f0;
+  }
+  
+  .to-do-list button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.565);
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-controller {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin: 5px 5px;
+    border-radius: 5px;
+  }
+  
+  .input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+  }
+  
+  
+  
+  .edit-controller {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .update-controller {
+    display: none;
+    border: 1px solid black;
+  }
+  
+  
+  @media(max-width: 768px) {
+    .app {
+      width: 95%;
+      text-align: center;
+    }
+  
+    .input-header {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+  
+    .to-do-input {
+    display: flex;
+    justify-content: center;      
+    }
+  
+    .to-do-input input {
+      width: 300px;
+    
+    }
+  
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #date{
+    margin-left: 10px;
+  }
+  #item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #enter{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .update-controller{
+    display: flex;
+    justify-content: space-between;
+  }
+  
